@@ -4,11 +4,6 @@ import { useState } from 'react';
 
 const Slider = () => {
     const [index, setIndex] = useState(0);
-    const images = [
-        '/img/slider1.jpg',
-        '/img/slider2.jpg',
-        '/img/slider3.jpg'
-    ];
 
     const handleArrow = (direction) =>{
         if(direction==="l"){
@@ -25,11 +20,15 @@ const Slider = () => {
                 <Image src='/img/arrowl.png' alt='' layout='fill' objectFit='contain' />
             </div>
             <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
-                {images.map((img, i) => {
-                    <div className={styles.imgContainer} key={i}>
-                        <Image src={img} alt='' width='100px' height='100px' />
-                    </div>
-                })}
+                <div className={styles.imgContainer}>
+                    <Image src="/img/slider1.jpg" alt='' height='650' width='750' />
+                </div>
+                <div className={styles.imgContainer}>
+                    <Image src="/img/slider2.jpg" alt='' height='650' width='750' />
+                </div>
+                <div className={styles.imgContainer}>
+                    <Image src="/img/slider3.jpg" alt='' height='650' width='750' />
+                </div>
             </div>
             <div className={styles.arrowContainer} style={{ right: 0 }} onClick={()=>handleArrow("r")}>
                 <Image src='/img/arrowr.png' alt='' layout='fill' objectFit='contain' />
