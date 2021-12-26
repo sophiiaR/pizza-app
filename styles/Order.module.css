@@ -17,6 +17,7 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
+    padding: 40px 0;
 }
 
 .done {
@@ -70,6 +71,10 @@
 
 .totalTextTitle {
     margin-right: 10px;
+}
+
+.totalText {
+    padding: 8px;
 }
 
 .button {

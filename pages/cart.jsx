@@ -18,10 +18,10 @@ const Cart = () => {
                         <td>
                             <div className={styles.imgContainer}>
                                 <Image
-                                    src="/img/pizza.png"
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt=""
+                                    src='/img/pizza.png'
+                                    layout='fill'
+                                    objectFit='cover'
+                                    alt=''
                                 />
                             </div>
                         </td>
@@ -47,10 +47,10 @@ const Cart = () => {
                         <td>
                             <div className={styles.imgContainer}>
                             <Image
-                                src="/img/pizza.png"
-                                layout="fill"
-                                objectFit="cover"
-                                alt=""
+                                src='/img/pizza.png'
+                                layout='fill'
+                                objectFit='cover'
+                                alt=''
                             />
                             </div>
                         </td>
