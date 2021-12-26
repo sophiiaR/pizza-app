@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import PizzaList from '../components/PizzaList'
+import Slider from '../components/Slider'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,7 +12,8 @@ export default function Home() {
         <meta name="description" content="Best pizza shop in town" />
         <link rel="icon" href="/img/logo.png" />
       </Head>
-      <h1>Pizza Italia</h1>
+      <Slider />
+      <PizzaList />
     </div>
   )
 }
